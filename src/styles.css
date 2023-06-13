@@ -22,6 +22,12 @@ body {
   display: block;
 }
 
+.img-responsive-card {
+  margin: 0;
+  padding: 0;
+  max-width: 100px;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
