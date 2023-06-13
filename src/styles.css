@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: #3b2116;
 }
 
 .container {
@@ -54,7 +54,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #272044;
+  color: #3b2116;
   padding: 16px 32px;
   display: inline-block;
   margin-top: 32px;
@@ -66,7 +66,7 @@ header a {
 
 footer {
   color: white;
-  background-image: linear-gradient(rgba(39, 32, 68, 1), rgba(39, 32, 68, 1)),
+  background-image: linear-gradient(rgba(59, 33, 22), rgba(59, 33, 22)),
     url(`../images/munster-university.png`);
   background-repeat: no-repeat;
   background-size: cover;
