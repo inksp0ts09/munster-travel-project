@@ -8,10 +8,6 @@ body {
   margin: 0 auto;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -144,6 +140,10 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 main h4 {
