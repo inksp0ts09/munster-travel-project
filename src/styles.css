@@ -1,10 +1,93 @@
 body {
   font-family: "Poppins", sans-serif;
+  background: #3b2116;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.img-responsive-card {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+.card {
+  background-color: white;
+  margin-top: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #902b03;
+  text-decoration: none;
+}
+
+.grid-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+section.secondary {
+  background: #f8f8f8;
 }
 
 header {
@@ -43,7 +126,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #272044;
+  color: #3b2116;
   padding: 16px 32px;
   display: inline-block;
   margin-top: 32px;
@@ -53,7 +136,96 @@ header a {
   background-color: white;
 }
 
-@media (max-width: 900px) {
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h3.text-center {
+  text-align: center;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+h3 footer {
+  color: white;
+  background-image: linear-gradient(rgba(59, 33, 22), rgba(59, 33, 22)),
+    url(`../images/munster-university.png`);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -65,5 +237,18 @@ header a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
